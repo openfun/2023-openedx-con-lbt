@@ -19,12 +19,12 @@ h1 {
 
 # Protocol 1
 
-One user sends batch of 2000 statements per requests to the LRS.
+One user continuously sends batch of 2200 statements per requests to the LRS.
 
 
 ```mermaid
 flowchart TB
-    user("🏫🎓") -- 2000 statements --> lrs((LRS))
+    user("🏫🎓") -- 2200 statements --> lrs((LRS))
     lrs -- HTTP 200 OK--> user
 ```
 
@@ -36,7 +36,7 @@ flowchart TB
 
 # Protocol 2 
 
-Many users sends 1 statement per requests to the LRS
+Many users continuously and concurrently send 1 statement per requests to the LRS
 
 
 ```mermaid {scale: 0.8}

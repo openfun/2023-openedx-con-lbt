@@ -24,15 +24,16 @@ hideInToc: true
 
 <style>
     .cover {
-    background-color: lightblue;
+    background-color: white;
     }
 </style>
 
+
 # What is the most performant and sustainable open source LRS in 2023? 
 
-<logos-github /> [@openfun](https://github.com/openfun) <logos-github /> 
+<logos-github-icon /> [openfun](https://github.com/openfun) 
 
-<logos-twitter />  [@open_fun](https://twitter.com/open_fun) <logos-twitter />
+<logos-twitter />  [@open_fun](https://twitter.com/open_fun)
 
 <style>
 h1 {

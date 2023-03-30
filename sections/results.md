@@ -1,5 +1,5 @@
 ---
-layout: two-cols
+layout: full
 ---
 
 <style>
@@ -15,47 +15,37 @@ h1 {
 </style>
 
 # Results for protocol 1
-One user, 2000 statements per request
+One user, 2200 statements per request
 
-POST
-
-<p float="center">
-  <img src="/images/protocol_1.png" width="500" />
-</p>
-
-::right::
-
-<br>
-<br>
-<br>
-
-GET
-
-<p float="center">
-  <img src="/images/protocol_1.png" width="500" />
-</p>
+<div class="grid grid-cols-2 gap-4">
+  <div>
+    POST /statements
+    <br/>
+    <img src="/images/protocol_1_post.png" width="500" />
+  </div>
+  <div>
+    GET /statements?limit=2200
+  <img src="/images/protocol_1_get.png" width="500" />
+  </div>
+</div>
 
 ---
-layout: two-cols
+layout: full
 ---
 
 # Results for protocol 2
 
 1000 users, 1 statement per request
 
-<p float="center">
-(Plot of test protocol 2 run)
-  <!-- <img src="/images/protocol_1.png" width="500" /> -->
-</p>
+<div class="grid grid-cols-2 gap-4">
+  <div>
+    POST /statements
+    <br/>
+    <img src="/images/protocol_2_post.png" width="500" />
+  </div>
+  <div>
+    GET /statements?id=
+  <img src="/images/protocol_2_get.png" width="500" />
+  </div>
+</div>
 
-
-::right::
-
-<br>
-<br>
-<br>
-
-<p float="center">
-(Plot of test protocol 2 run)
-  <!-- <img src="/images/protocol_1.png" width="500" /> -->
-</p>

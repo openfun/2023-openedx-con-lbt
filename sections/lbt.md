@@ -2,9 +2,22 @@
 layout: two-cols
 ---
 
-# What is an LRS?
-Quick reminder
+<style>
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
+# What is a Learning Record Store (LRS)?
+Quick reminder with the example of Ralph
+
+<br>
 
 ```mermaid {scale: 0.8}
 flowchart LR
@@ -15,12 +28,13 @@ flowchart LR
     lms("LMS - Open edX 🎓") -- xAPI --> ralph
     marsha("Marsha 🎬") -- xAPI --> ralph
     ashley("Ashley 💬") -- xAPI --> ralph
-    LRS --> potsie("Potsie 📈") 
+    LRS --> grafana("Grafana 📈") 
     LRS --> superset("Superset 📈") 
-    LRS --> warren("Warren 📈")
 ```
 
 ::right::
+
+<br>
 
 ### Some open source LRS
 
@@ -45,11 +59,11 @@ flowchart LR
 
 <br>
 
-<img src="images/traxlrs.png" width="100" class="right"> 
+<img src="/images/traxlrs.png" width="100" class="right"> 
 
 <br>
 
-<img src="https://raw.githubusercontent.com/openfun/logos/main/ralph/ralph-black.png" width="100" class="right"> 
+<img src="https://raw.githubusercontent.com/openfun/logos/main/ralph/ralph-color-light.png" width="130" class="right"> 
 
 ---
 layout: full
@@ -82,15 +96,15 @@ h1 {
 }
 </style>
 
-# How LRS Benchmarking Tool works
+# Architecture of **L**RS **B**enchmarking **T**ool (LBT)
 
 <div class="center">
 
 ```mermaid {scale: 1.1}
 flowchart LR
     datasim("Datasim ①") -- xAPI --> locust("Locust ②") -- HTTP POST/GET --> lrs((LRS))
-    lrs((LRS)) -- HTTP 200 --> locust
-    locust -- metrics --> jup("Jupyter Notebook 📊 📉 📈")
+    lrs((LRS)) -- HTTP response --> locust
+    locust -- collected metrics --> jup("Jupyter Notebook 📊 📉 📈")
 ```
 </div>
 
