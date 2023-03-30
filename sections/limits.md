@@ -1,5 +1,6 @@
 ---
-layout: full
+layout: image-right
+image: https://media.giphy.com/media/tGZRCBAPhCXxm/giphy.gif
 ---
 
 <style>
@@ -15,17 +16,18 @@ h1 {
 </style>
 
 # Limits of LBT
- 
-<br>
+## 
 
-🐳 LRS and DB in docker containers
+🐳 LRS and attached DB in docker containers
 
-💻 On a laptop
+💻 With Locust running on the same machine
 
-&emsp;&emsp;🔁 But several iterations
+&emsp;&emsp;❌ Can't take absolute values out of this context
 
-🧵 Just one thread each
+&emsp;&emsp;🔁 But several iterations for reproductibility
 
-📜 Not all LRS fully compliant to LRS spec
+&emsp;&emsp;☸️ And similar results on a Kubernetes cluster deployment
+
+📜 LRS specification compliance &rarr; impact on performance
 
 ⏱️ No insights on time bottlenecks (profiler needed)

@@ -1,5 +1,5 @@
 ---
-layout: two-cols
+layout: full
 ---
 
 <style>
@@ -14,83 +14,49 @@ h1 {
 }
 </style>
 
-# What did it bring to us?
-Still need improvements
-
-<br>
-
-👨‍💻 Add an Async Elasticsearch backend to Ralph
-
-⚡️ Optimize authentication
-
-* TODO
-
-::right::
-
 # What's next?
 Contributions are welcomed!
 
-<br>
+<div class="grid grid-cols-3 gap-4 credits">
+  <div>
+    <a href="https://openfun.github.io/2023-openedx-con-lbt/">
+      Slides
+    </a>
+    <br/>
+    <img src="/images/qr-code-slides.png" />
+  </div>
+  <div>
+    <logos-github-icon />
+    <a href="https://github.com/openfun/lbt">
+      openfun/lbt
+    </a>
+    <img src="/images/qr-code-lbt.png" />
+  </div>
+  <div>
+    <logos-discord-icon />
+    <a href="https://discord.com/invite/vYx6YWxJCS">
+      OpenFUN
+    </a>
+    <img src="/images/openfun-discord-invite.png" alt="OpenFUN Discord invitation"/>
+  </div>
+</div>
 
-➕ Add TraxLRS (with an official docker image)
+<div class="grid grid-cols-2 gap-4">
+  <div>
+      <img class="logo" src="/images/logo-openfun.png"  width="200" />
+  </div>
+  <div>
+      <img class="logo" src="/images/logos-finance.png" />
+  </div>
+</div>
 
-<logos-github-icon /> Publish results periodically on a Github Page
-
-💚 Make it usable in a CI
-
-💾 Focus on the memory aspect
-
----
-layout: two-cols
----
 <style>
-.logo {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+.credits {
+  margin-top: 1rem;
+  text-align: center;
 }
-.parent{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+.logo {
+  display: block;
+  margin: 1rem auto 0;
 }
 </style>
-
-# Thank you!
-
-<div class="parent">
-
-<div>
-
-<logos-github-icon /> [LRS Benchmarking Tool](https://github.com/openfun/lbt)   
-
-</div>
-
-<div>
-
-<logos-github-icon /> [Slides](https://github.com/openfun/2023-openedx-con-lbt)
-
-</div>
-
-
-  <div>
-  <img src="images/qr-code-lbt.png" width="220">
-  </div>
-
-  <div>
-  <img src="images/qr-code-slides.png" width="220">
-  </div>
-</div>
-
-::right::
-
-
-<img src="images/logo-france-universite-numerique.svg" width="200" class="logo">
-<br>
-<img src="images/logo-openfun.png" width="200" class="logo">
-<br>
-<img src= "images/logo-openedx.png" width="200" class="logo">
-<br>
-<img src= "images/logo-france-relance.svg" width="120" class="logo">
